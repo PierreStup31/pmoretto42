@@ -3,16 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 21:18:25 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/10/27 12:06:58 by pmoretto         ###   ########.fr       */
+/*   Updated: 2021/11/02 21:23:51 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *c)
+//#include<libft.h>
+#include<stdio.h>
+
+size_t	ft_strlen(const char *c)
 {
-	int	dcp;
+	size_t	dcp;
 
 	dcp = 0;
 	while (c[dcp] != '\0')
@@ -29,5 +32,5 @@ int	ft_strlen(const char *c)
 	
 	str = "Salut";
 	ft_strlen(str);//fonction pour decompte et boucle
-	printf("%d", ft_strlen(str));
+	printf("%zu", ft_strlen(str));
 }*/
