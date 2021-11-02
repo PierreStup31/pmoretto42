@@ -6,10 +6,11 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 21:18:25 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/02 21:23:51 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/02 21:58:41 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//Cette fonction permet de calculer la longueur, exprimée en nombre de caractères, de la chaîne de caractères.
 //#include<libft.h>
 #include<stdio.h>
 
