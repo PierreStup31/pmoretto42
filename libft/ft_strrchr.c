@@ -1,41 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 18:33:44 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/03 16:41:32 by pierremoret      ###   ########.fr       */
+/*   Created: 2021/11/03 16:22:59 by pierremoret       #+#    #+#             */
+/*   Updated: 2021/11/03 17:21:27 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Cette fonction recherche la première occurrence du caractère passé en second paramètre dans
-// la chaîne de caractères spécifiée via le premier paramètre.
 //#include <libft.h>
+#include <string.h>
 #include <stdio.h>
-//#include <string.h>
 
-char	*ft_strchr(const char *s, int c)
+
+char *ft_strrchr(const char *s, int c)
 {
     unsigned int    i;
+    int             cmp;
+
     i = 0;
+    cmp = 0;
+
 
     while (s[i])
     {
         if (s[i] == (char)c)
-			return ((char *)s + i);
+        {
+            cmp = i;
+			//return ((char *)s + i);
+        }
 		i++;
+
     }
-    return (NULL);
+    return ((char *)s + cmp);
 }
 
 int main () 
 {
    const char str[] = "This is just a String Salope"; 
-   const char ch = 'o'; 
+   const char ch = 'i'; 
    char *p;
-   p = ft_strchr(str, ch);
+   p = ft_strrchr(str, ch);
    printf("String starting from %c is: %s", ch, p);
    return 0;
 }
