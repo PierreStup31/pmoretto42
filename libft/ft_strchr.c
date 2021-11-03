@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:33:44 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/03 16:41:32 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/03 17:28:36 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strchr(const char *s, int c)
     return (NULL);
 }
 
-int main () 
+/*int main () 
 {
    const char str[] = "This is just a String Salope"; 
    const char ch = 'o'; 
@@ -38,4 +38,4 @@ int main ()
    p = ft_strchr(str, ch);
    printf("String starting from %c is: %s", ch, p);
    return 0;
-}
+}*/
