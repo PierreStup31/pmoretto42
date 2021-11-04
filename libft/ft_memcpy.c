@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:15:17 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/03 15:27:34 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/04 15:25:38 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void *ft_memcpy(void *dest, const void *src, size_t count)
 	return dest;
 }
 
-/*int main(void) 
+int main(void) 
 {
     int array [] = { 54, 85, 20, 63, 21 };
     int * copy = NULL;
@@ -44,5 +44,5 @@ void *ft_memcpy(void *dest, const void *src, size_t count)
     
     return (0);
 }
-*/
+
     
