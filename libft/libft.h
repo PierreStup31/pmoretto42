@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 17:02:02 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/03 23:43:22 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/04 14:59:13 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,4 @@ void    *ft_memmove(void *dest, const void *src, size_t count);
 char    *ft_strnstr(const char *s1, const char *s2, size_t len);
 char    *ft_strchr(const char *s, int c);
 char    *ft_strrchr(const char *s, int c);
+int memcmp( const void * ptr1, const void * ptr2, size_t len);
