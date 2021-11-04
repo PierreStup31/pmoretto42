@@ -1,23 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/27 17:02:02 by pmoretto          #+#    #+#             */
+/*   Created: 2021/09/10 04:51:07 by pmoretto          #+#    #+#             */
 /*   Updated: 2021/11/03 23:43:22 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <stdlib.h>
-# include <unistd.h>
+#include<string.h>
+#include<stdio.h>
 
-void    *ft_memset( void * ptr, int val, size_t len);
-void    ft_bzero(void *ptr, size_t len);
-size_t  ft_strlen(const char *c);
-void    *ft_memcpy(void *dest, const void *src, size_t count);
-void    *ft_memmove(void *dest, const void *src, size_t count);
-char    *ft_strnstr(const char *s1, const char *s2, size_t len);
-char    *ft_strchr(const char *s, int c);
-char    *ft_strrchr(const char *s, int c);
+/*size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+//char	*ft_strcpy(char *dest, char *src)
+{
+	int	i;
+
+	i = 0;
+	while (src[i])
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
+}*/
+
+int	main(void)
+{
+	char	tab[] = "salut";
+	char	tab2[10];
+	size_t	size;
+	size = sizeof(tab2);
+
+
+	strlcpy(tab2, tab, size);
+	printf("%s\n", tab2);
+	printf("%zu\n", size);
+}
