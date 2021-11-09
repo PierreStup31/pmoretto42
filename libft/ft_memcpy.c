@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:15:17 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/04 15:25:38 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/05 14:41:23 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,25 +24,33 @@ void *ft_memcpy(void *dest, const void *src, size_t count)
 	return dest;
 }
 
-int main(void) 
+int main()
+{
+    char s1[];
+    const char  s2[] = "LaBite";
+    
+    printf("%s\n", s1);
+    ft_memcpy(s1, s2, 10);
+    printf("%s", s1);
+}
+
+/* int main(void) 
 {
     int array [] = { 54, 85, 20, 63, 21 };
     int * copy = NULL;
-    int length = sizeof( int ) * 5;
+    int count = sizeof( int ) * 5;
        
     // Memory allocation and copy //
-    copy = (int *) malloc( length );
-    ft_memcpy( copy, array, length );
+    copy = (int *) malloc( count );
+    ft_memcpy( copy, array, count );
         
     // Display the copied values //
-    for( length=0; length<5; length++ ) {
-        printf( "%d ", copy[ length ] );
+    for( count=0; count<5; count++ ) {
+        printf( "%d ", copy[ count ] );
     }
     printf( "\n" );
         
     free( copy );
     
     return (0);
-}
-
-    
+} */

@@ -6,37 +6,37 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 04:51:07 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/03 23:43:22 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/08 14:34:23 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<string.h>
 #include<stdio.h>
 
-/*size_t	ft_strlcpy(char *dst, const char *src, size_t size);
-//char	*ft_strcpy(char *dest, char *src)
+size_t	ft_strlcpy(char *dest, const char *src, size_t len)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while (src[i])
+	while (i > len)
 	{
 		dest[i] = src[i];
 		i++;
+		if (dest[i] == '\0')
+			return (i);
 	}
 	dest[i] = '\0';
 	return (dest);
-}*/
+}
 
 int	main(void)
 {
 	char	tab[] = "salut";
-	char	tab2[10];
-	size_t	size;
-	size = sizeof(tab2);
+	size_t	len = sizeof(tab);
+	char	tab2[len];
 
 
-	strlcpy(tab2, tab, size);
-	printf("%s\n", tab2);
-	printf("%zu\n", size);
+	strlcpy(tab2, tab, 20);
+	printf("%c\n", strlcpy(tab2, tab, len));
+	printf("%s\n", strlcpy(tab2, tab, len));
 }

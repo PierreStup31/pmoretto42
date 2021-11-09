@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:30:52 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/03 15:44:47 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/05 15:13:20 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void *ft_memmove(void *dest, const void *src, size_t count)
 	return dest;
 }
 
-/*int main() 
+int main() 
 {
 
     // On crée une zone de mémoire de 10 entiers et contenant
@@ -70,4 +70,4 @@ void *ft_memmove(void *dest, const void *src, size_t count)
     puts( "" );  // Un retour à la ligne
 
     return EXIT_SUCCESS;
-}*/
+}
