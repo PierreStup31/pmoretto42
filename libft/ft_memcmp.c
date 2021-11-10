@@ -6,12 +6,12 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 14:54:09 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/10 13:02:00 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/10 13:16:24 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include<stdio.h>
+//#include<stdio.h>
 
 int ft_memcmp( const void * ptr1, const void * ptr2, size_t len)
 {
@@ -29,10 +29,10 @@ int ft_memcmp( const void * ptr1, const void * ptr2, size_t len)
     return (str1[i] - str2[i]);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	const char	ptr1[] = "Bonjour";
 	const char	ptr2[] = "Aonjour";
     
-	printf("La difference est de : %d", ft_memcmp(ptr1, ptr2, 5));
-}
+	printf("La difference est de : %d", memcmp(ptr1, ptr2, 5));
+} */
