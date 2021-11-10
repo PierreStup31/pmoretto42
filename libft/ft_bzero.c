@@ -6,13 +6,13 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:10:00 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/03 22:50:31 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/09 23:52:19 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <libft.h>
-#include <stdio.h>
-#include <strings.h>
+#include "libft.h"
+//#include <stdio.h>
+//#include <strings.h>
 //La fonction bzero() met à 0 (octets contenant « \0 ») les n premiers octets du bloc pointé par s. 
 
 void ft_bzero(void * ptr, size_t len)

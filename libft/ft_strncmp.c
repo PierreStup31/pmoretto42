@@ -3,13 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pmoretto <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 04:16:51 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/09/18 19:47:20 by pmoretto         ###   ########.fr       */
+/*   Updated: 2021/11/10 00:15:26 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
+#include "libft.h"
+//#include <stdio.h>
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {

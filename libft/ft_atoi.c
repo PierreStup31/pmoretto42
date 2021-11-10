@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pmoretto <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 21:24:10 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/09/21 05:25:09 by pmoretto         ###   ########.fr       */
+/*   Updated: 2021/11/09 23:51:06 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-#include <stdlib.h>
+
+//#include <stdio.h>
+#include "libft.h"
 
 int	skip_whitespaces(char *str, int *ptr_i)
 {
