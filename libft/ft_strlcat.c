@@ -1,41 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/15 04:16:51 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/10 15:26:55 by pierremoret      ###   ########.fr       */
+/*   Created: 2021/11/11 14:39:55 by pierremoret       #+#    #+#             */
+/*   Updated: 2021/11/11 15:14:50 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 #include <stdio.h>
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+size_t  ft_strlcat(char * dest, const char * src, size_t len)
 {
-	unsigned int	i;
+	size_t		i;
+	size_t		j;
+	size_t		src_size;
+	size_t		dst_size;
+
+	src_size = ft_strlen((char*)src);
+	dst_size = ft_strlen((char*)dest);
+
+	if (!dest || !src || len <= 0 || len < dst_size)
+		return (src_size + len);
 
 	i = 0;
-	if (n <= 0)
+    j = dst_size;
+	while (j < (len - 1) && i < (size_t)src_size)
 	{
-		return (0);
-	}
 
-	while (s1[i] && s2[i] && s1[i] == s2[i] && i < n - 1 )
-	{
+		dest[j] = src[i];
 		i++;
+        j++;
 	}
-	return ((unsigned char) s1[i] - (unsigned char) s2[i]);		
+	dest[j] = '\0';
+	return (src_size + dst_size);
 }
-
-/* int	main(void)
-{
-	unsigned int 	n;
-
-	n = 6;
-	char	s1[] = "salututi";
-	char	s2[] = "salututi";
-	printf("%d", ft_strncmp(s1, s2, n));
-} */

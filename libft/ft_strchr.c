@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:33:44 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/10 00:13:43 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/11 00:22:51 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 //#include <stdio.h>
 //#include <string.h>
 
-char	*ft_strchr(const char *s, int c)
+char * ft_strchr(const char *s, int c)
 {
     unsigned int    i;
     i = 0;
@@ -35,8 +35,8 @@ char	*ft_strchr(const char *s, int c)
  
 /* int main ()  
 {
-   const char str[] = "This is just a String Salope 😈"; 
-   const char ch = 'o'; 
+   const char str[] = "This is just a String Salope"; 
+   const char ch = '\0'; 
    char *p;
    p = ft_strchr(str, ch);
    printf("String starting from %c is: %s", ch, p);

@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 14:01:04 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/10/26 14:06:06 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/10 15:20:55 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int     ft_tolower(int c)
 {
-    if (ft_isupper(c))
-        c = c + 32;
+    if (c >= 'A' && c <= 'Z')
+        return (c + 32);
     return (c);
 }

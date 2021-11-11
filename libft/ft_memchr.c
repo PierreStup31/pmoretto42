@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 13:52:56 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/09 23:57:24 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/10 19:25:25 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 //#include<stdio.h>
 //#include<string.h>
 
-void * ft_memchr( const void * s, int c, size_t size )
+void * ft_memchr( const void * s, int c, size_t len)
 {
     unsigned char *ptr;
     unsigned int    i;
@@ -22,7 +22,7 @@ void * ft_memchr( const void * s, int c, size_t size )
     ptr = (unsigned char *)s;
     i = 0;
 
-    while (i < size)
+    while (i < len)
     {
         if (ptr[i] == (unsigned char )c)
             return ((void *)ptr + i);

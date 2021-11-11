@@ -6,32 +6,42 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:15:17 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/10 00:10:57 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/10 19:33:10 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdio.h>
 //#include <stdlib.h>
+//#include <string.h>
 
-void *ft_memcpy(void *dest, const void *src, size_t count)
+void * ft_memcpy(void * dest, const void * src, size_t len)
 {
-	char *tmp = dest;
-	const char *s = src;
+	char *tmp;
+	const char *s;
+    tmp = dest;
+    s = src;
 
-	while (count--)
+    if (dest == NULL && src == NULL)
+        return (NULL);
+         
+	while (len--)
+    {
 		*tmp++ = *s++;
-	return dest;
+    }
+	return (dest);
 }
 
 /* int main()
 {
-    char s1[];
-    const char  s2[] = "LaBite";
+    char s1[20];
+    const char  s2[] = "salut la bite";
     
     printf("%s\n", s1);
-    ft_memcpy(s1, s2, 10);
+    ft_memcpy(s1, s2, 20);
     printf("%s", s1);
+
+
 } */
 
 /* int main(void) 
