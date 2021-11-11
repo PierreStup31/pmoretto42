@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 14:06:47 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/10/26 14:08:34 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/10 15:20:54 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int     ft_toupper(int c)
 {
-    if (ft_islower(c))
-        c = c - 32;
+    if (c >= 'a' && c <= 'z')
+        return (c - 32);
     return (c);
 }

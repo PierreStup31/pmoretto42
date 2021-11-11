@@ -6,28 +6,28 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:10:00 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/09 23:52:19 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/11 16:10:57 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdio.h>
 //#include <strings.h>
-//La fonction bzero() met à 0 (octets contenant « \0 ») les n premiers octets du bloc pointé par s. 
+//La fonction bzero() met à 0 (octets contenant « \0 ») les n premiers octets du bloc pointé par ptr. 
 
 void ft_bzero(void * ptr, size_t len)
 {
     unsigned char   *c;
 
     c = (unsigned char *)ptr;
-    while (len > 0)
+    while (len-- > 0)
     {
         *c++ = '\0';
-        len--;
+        //len--;
     }
 }  
 
-int		main(void)
+/* int		main(void)
 {
 	printf("======= Test bzero =======\n");
 
@@ -52,6 +52,6 @@ int		main(void)
 	ft_bzero(str_test3, 4);
 	printf("memcmp bzero 3 : %d\n", memcmp(temoin3, str_test3, 4));
 	putchar('\n');
-}
+} */
 
 

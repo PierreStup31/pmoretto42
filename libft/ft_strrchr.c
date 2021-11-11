@@ -6,40 +6,29 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:22:59 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/10 00:32:04 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/11 01:40:50 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
+//#include <string.h>
+//#include <stdio.h>
 
-
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-    unsigned int    i;
-    int             cmp;
+	int i;
 
-    i = 0;
-    cmp = -1;
-
-
-    while (s[i])
-    {
-        if (s[i] == (char)c)
-        {
-            cmp = i;
-			//return ((char *)s + i);
-        }
-		i++;
-
-    }
-    if (cmp == -1)
-        return (NULL);
-    return ((char *)s + cmp);
+	i = ft_strlen(s);
+	while (i >= 0)
+	{
+		if (s[i] == (char)c)
+			return ((char*)s + i);
+		i--;
+	}
+	return (NULL);
 }
 
- int main () 
+/* int main () 
 {
    const char str[] = "This is just a String Salope"; 
    const char ch = 'z'; 
@@ -47,4 +36,4 @@ char *ft_strrchr(const char *s, int c)
    p = ft_strrchr(str, ch);
    printf("String starting from %c is: %s", ch, p);
    return 0;
-} 
+}  */

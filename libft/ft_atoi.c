@@ -6,17 +6,51 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 21:24:10 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/09 23:51:06 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/11 02:28:15 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-#include "libft.h"
 
-int	skip_whitespaces(char *str, int *ptr_i)
+#include "libft.h"
+#include <stdbool.h>
+
+/* static _Bool	ft_isspace(const char c)
 {
-	int		j;
+	if (c == '\t' || c == '\n' || c == '\v'
+		|| c == '\f' || c == '\r' || c == ' ')
+		return (true);
+	return (false);
+}
+
+int	ft_atoi(const char *str)
+{
+	int		sign;
+	int		res;
+
+	while (ft_isspace(*str))
+		str++;
+	sign = 1;
+	if (*str == '+')
+		str++;
+	else if (*str == '-')
+	{
+		sign = -1;
+		str++;
+	}
+	res = 0;
+	while (*str >= '0' && *str <= '9')
+	{
+		res *= 10;
+		res += (*str - 48);
+		str++;
+	}
+	return (res * sign);
+} */
+
+int	skip_whitespaces(const char *str, int *ptr_i)
+{
 	int		i;
+	int		j;
 
 	i = 0;
 	while ((str[i] >= '\t' && str[i] <= '\r') || str[i] == ' ')
@@ -34,7 +68,7 @@ int	skip_whitespaces(char *str, int *ptr_i)
 	return (j);
 }
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int		sign;
 	int		result;
