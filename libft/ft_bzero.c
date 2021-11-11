@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:10:00 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/11 16:10:57 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/11 17:06:55 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void ft_bzero(void * ptr, size_t len)
         *c++ = '\0';
         //len--;
     }
-}  
+}
 
 /* int		main(void)
 {

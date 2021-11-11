@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:02:04 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/11 15:43:15 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/11 17:06:59 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ char * ft_strnstr(const char *foin, const char *aiguille, size_t len)
 	size_t magnet;
 
 	magnet = ft_strlen(aiguille);
+	
 		if (aiguille[0] == '\0')
 		return ((char *)&foin[0]);
 	if (foin[0] == '\0')
