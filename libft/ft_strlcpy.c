@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 04:51:07 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/11 17:34:45 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/15 17:06:18 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t len)
 	len2 = ft_strlen((char*)src); //On recupere la taille de SRC
 	i = 0;
 
-	if (len == 0) // Securite si DEST ou SRC = 0 || len = 0
+	if (len == 0) // Securite si len = 0
 		return (len2); // On return la taille de SRC
 
-	while (i < (len - 1) && i < (size_t)len2) 
+	while (i < (len - 1) && i < (size_t)len2)
 	{
 		dest[i] = src[i];
 		i++;

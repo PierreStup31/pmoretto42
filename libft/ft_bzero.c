@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:10:00 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/11 17:06:55 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/16 13:51:14 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 //#include <strings.h>
 //La fonction bzero() met à 0 (octets contenant « \0 ») les n premiers octets du bloc pointé par ptr. 
 
-void ft_bzero(void * ptr, size_t len)
+void ft_bzero(void *ptr, size_t len)
 {
     unsigned char   *c;
 

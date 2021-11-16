@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 14:39:55 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/11 15:14:50 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/16 13:55:48 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include <stdio.h>
 
-size_t  ft_strlcat(char * dest, const char * src, size_t len)
+size_t  ft_strlcat(char *dest, const char *src, size_t len)
 {
 	size_t		i;
 	size_t		j;

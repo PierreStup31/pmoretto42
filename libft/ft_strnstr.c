@@ -6,13 +6,13 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:02:04 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/11 17:06:59 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/16 13:56:36 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char * ft_strnstr(const char *foin, const char *aiguille, size_t len)
+char *ft_strnstr(const char *foin, const char *aiguille, size_t len)
 {
 	size_t magnet;
 

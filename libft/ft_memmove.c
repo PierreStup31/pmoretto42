@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:30:52 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/11 17:06:57 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/16 13:53:11 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,43 +18,40 @@ En cas de chevauchement, la copie se passe comme si les octets de la zone source
  temporaire, qui ne chevauche aucune des deux zones pointées par source et destination, et les octets sont 
  ensuite copiés de la zone temporaire vers la zone de destination. */
 
-
 #include "libft.h"
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
 
-/* void * ft_memmove(void *dest, const void *src, size_t len)
+void *ft_memmove(void *dest, const void *src, size_t len)
 {
-	char *d;
-	const char *s;
 	size_t	i;
 
-	s = src;
-	d = dest;
+	if (!dest && !src)
+		return (NULL);
+	
 	i = 0;
-
-	if (dest == NULL && src == NULL)
-		return (dest);
-		
-	if (dest > src)
+	if (src < dest)
     {
 		
-		while (len--)
-			d[len] = s[len];
+		while (len > 0)
+		{
+		((unsigned char *)dest)[len - 1] = ((unsigned char *)src)[len - 1];
+		len--;
+		}
 	}
     else 
     {
 		while (i < len)
 		{
-			d[i] = s[i];
+			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 			i++;
 		}
 	}
 	return (dest);
-} */
+}
 
-void	*ft_memmove(void *dest, const void *src, size_t len)
+/* void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	int		i;
 
@@ -69,4 +66,4 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 		i--;
 	}
 	return (dest);
-}
+} */

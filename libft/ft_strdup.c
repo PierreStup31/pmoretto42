@@ -6,14 +6,14 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 15:25:49 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/12 17:21:22 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/16 14:16:20 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+//#include <stdio.h>
 
-char    *ft_strdup(const char * src)
+char    *ft_strdup(const char *src)
 {
     int i;
     int len;
@@ -37,8 +37,8 @@ char    *ft_strdup(const char * src)
 	return (dest);
 }
 
-int main()
+/* int main()
 {
     char src[] = "salut coquine";
-    printf("%s", ft_strdup(src));
-}
+    printf("%s", ft_strdup(*src));
+} */

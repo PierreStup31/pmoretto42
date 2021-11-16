@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:33:44 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/11 00:22:51 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/16 13:55:10 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 //#include <stdio.h>
 //#include <string.h>
 
-char * ft_strchr(const char *s, int c)
+char *ft_strchr(const char *s, int c)
 {
     unsigned int    i;
     i = 0;

@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:15:17 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/10 19:33:10 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/16 13:53:00 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 //#include <stdlib.h>
 //#include <string.h>
 
-void * ft_memcpy(void * dest, const void * src, size_t len)
+void *ft_memcpy(void *dest, const void *src, size_t len)
 {
 	char *tmp;
 	const char *s;

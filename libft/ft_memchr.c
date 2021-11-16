@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 13:52:56 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/10 19:25:25 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/16 14:15:55 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 //#include<stdio.h>
 //#include<string.h>
 
-void * ft_memchr( const void * s, int c, size_t len)
+void *ft_memchr( const void *src, int c, size_t len)
 {
     unsigned char *ptr;
     unsigned int    i;
 
-    ptr = (unsigned char *)s;
+    ptr = (unsigned char *)src;
     i = 0;
 
     while (i < len)
@@ -37,5 +37,4 @@ void * ft_memchr( const void * s, int c, size_t len)
     unsigned char   c = 'e';
     printf("%p\n", ft_memchr(s, c , 14));
     printf("%p", memchr(s, c, 14) );
-}
- */
+} */

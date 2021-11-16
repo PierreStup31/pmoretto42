@@ -1,39 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 16:22:59 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/16 12:53:22 by pierremoret      ###   ########.fr       */
+/*   Created: 2021/11/12 17:36:26 by pierremoret       #+#    #+#             */
+/*   Updated: 2021/11/16 13:51:31 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* elementCount: permet de spécifier le nombre d'éléments consécutifs à réserver dans le bloc de mémoire.
+
+elementSize : permet de fixer la taille (en nombre d'octets) d'un élément. */
 #include "libft.h"
-//#include <string.h>
-//#include <stdio.h>
 
-char	*ft_strrchr(const char *src, int c)
+void    *ft_calloc(size_t count, size_t size)
 {
-	int i;
+    void    *ptr;
+    int     len;
 
-	i = ft_strlen(src);
-	while (i >= 0)
-	{
-		if (src[i] == (char)c)
-			return ((char*)src + i);
-		i--;
-	}
-	return (NULL);
+    len = (count * size);
+    ptr = malloc(len);
+    
+    if (ptr == 0)
+        return (ptr);
+
+    ft_memset(ptr, 0, len);
+    return (ptr);
 }
-
-/* int main () 
-{
-   const char str[] = "This is just a String Salope"; 
-   const char ch = 'z'; 
-   char *p;
-   p = ft_strrchr(str, ch);
-   printf("String starting from %c is: %s", ch, p);
-   return 0;
-}  */
