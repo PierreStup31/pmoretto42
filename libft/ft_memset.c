@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 16:34:37 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/16 13:55:01 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/17 14:44:03 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 //#include <stdio.h>
 //#include <unistd.h>
 
-void *ft_memset( void *ptr, int c, size_t len)
+void *ft_memset(void *ptr, int c, size_t len)
 /* {
 	size_t	i;
 	i = 0;

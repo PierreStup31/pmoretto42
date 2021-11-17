@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/16 14:24:53 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/16 16:19:54 by pierremoret      ###   ########.fr       */
+/*   Created: 2021/11/16 18:23:33 by pierremoret       #+#    #+#             */
+/*   Updated: 2021/11/17 15:19:26 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putchar_fd(char c, int fd)
+char    *ft_substr(char const *s, unsigned int start, size_t len)
 {
-	write(fd, &c, 1);
+    
 }
