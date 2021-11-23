@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 17:02:02 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/16 14:25:31 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/17 18:21:55 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int ft_memcmp( const void *ptr1, const void *ptr2, size_t len);
 void    *ft_memchr( const void *src, int c, size_t len);
 void    *ft_memcpy(void *dest, const void *src, size_t len);
 void    *ft_memmove(void *dest, const void *src, size_t len);
-void    *ft_memset( void *ptr, int c, size_t len);
+void    *ft_memset(void *ptr, int c, size_t len);
 char    *ft_strchr(const char *s, int c);
 size_t  ft_strlcpy(char *dest, const char *src, size_t len);
 size_t  ft_strlen(const char *c);
@@ -45,6 +45,12 @@ char    *strdup(const char *src);
 void    *ft_calloc(size_t count, size_t size);
 
 void    ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *str, int fd);
+void	ft_putnbr_fd(int nb, int fd);
+void	ft_putendl_fd(char *s, int fd);
+char    *ft_strjoin(const char *str1, const char *str2);
+char    *ft_substr(const char *s, unsigned int start, size_t len);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif
 

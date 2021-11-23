@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 17:36:26 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/16 13:51:31 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/17 14:50:55 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void    *ft_calloc(size_t count, size_t size)
     if (ptr == 0)
         return (ptr);
 
-    ft_memset(ptr, 0, len);
+    ft_bzero(ptr, len);
+    //ft_memset(ptr, 0, len);
     return (ptr);
 }
