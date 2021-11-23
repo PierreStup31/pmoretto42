@@ -6,7 +6,7 @@
 #    By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/16 14:28:46 by pierremoret       #+#    #+#              #
-#    Updated: 2021/11/16 17:08:34 by pierremoret      ###   ########.fr        #
+#    Updated: 2021/11/17 18:21:53 by pierremoret      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,8 @@ SRCS=   ft_isalpha.c\
 		ft_putnbr_fd.c\
 		ft_putendl_fd.c\
 		ft_strjoin.c\
+		ft_substr.c\
+		ft_strmapi.c\
 
 		
 

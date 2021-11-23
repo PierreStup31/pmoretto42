@@ -6,7 +6,7 @@
 /*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 17:02:02 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/17 14:43:58 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/11/17 18:21:55 by pierremoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ void	ft_putstr_fd(char *str, int fd);
 void	ft_putnbr_fd(int nb, int fd);
 void	ft_putendl_fd(char *s, int fd);
 char    *ft_strjoin(const char *str1, const char *str2);
+char    *ft_substr(const char *s, unsigned int start, size_t len);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif
 
