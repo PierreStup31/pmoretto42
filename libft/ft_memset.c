@@ -3,22 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 16:34:37 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/17 14:44:03 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/12/16 11:23:00 by pmoretto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Cette fonction permet de remplir une zone mémoire, identifiée par son adresse et sa taille, avec une valeur précise.
-//pointer : permet de spécifier l'adresse du bloc mémoire à ré-initialiser.
-//value : indique la valeur à utiliser pour remplir le bloc de mémoire.
-//size : indique le nombre d'octets à initialiser.
 #include "libft.h"
-//#include <stdio.h>
-//#include <unistd.h>
 
-void *ft_memset(void *ptr, int c, size_t len)
+void	*ft_memset(void *ptr, int c, size_t len)
 /* {
 	size_t	i;
 	i = 0;
@@ -34,11 +28,12 @@ void *ft_memset(void *ptr, int c, size_t len)
 	return (ptr);
 }  */
 {
-	char *xs = ptr;
+	char	*xs;
 
+	xs = ptr;
 	while (len--)
 		*xs++ = c;
-	return ptr;
+	return (ptr);
 }
 
 /* int main()

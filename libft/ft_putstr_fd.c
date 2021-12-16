@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 14:58:51 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/16 15:14:45 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/12/16 10:50:20 by pmoretto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 void	ft_putstr_fd(char *str, int fd)
 {
-    if (!str)
-        return;
-    
+	if (!str)
+		return ;
 	while (*str != '\0')
 	{
 		write(fd, str, 1);

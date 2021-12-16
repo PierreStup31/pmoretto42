@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 04:16:51 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/26 15:00:57 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/12/16 11:08:49 by pmoretto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t len)
 	{
 		return (0);
 	}
-
 	while (s1[i] && s2[i] && s1[i] == s2[i] && i < len - 1 )
 	{
 		i++;
 	}
-	return ((unsigned char) s1[i] - (unsigned char) s2[i]);		
+	return ((unsigned char) s1[i] - (unsigned char) s2[i]);
 }
 
 /* int	main(void)

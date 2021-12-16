@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 04:51:07 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/15 17:06:18 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/12/16 11:04:24 by pmoretto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,18 @@
 size_t	ft_strlcpy(char *dest, const char *src, size_t len)
 {
 	size_t	i;
-	int	len2;
+	int		len2;
 
-	len2 = ft_strlen((char*)src); //On recupere la taille de SRC
+	len2 = ft_strlen((char *)src);
 	i = 0;
-
-	if (len == 0) // Securite si len = 0
-		return (len2); // On return la taille de SRC
-
+	if (len == 0)
+		return (len2);
 	while (i < (len - 1) && i < (size_t)len2)
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0'; // On rajoute le \0 a la fin de la DEST
+	dest[i] = '\0';
 	return (len2);
 }
 

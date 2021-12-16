@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 13:52:56 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/16 14:15:55 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/12/16 10:11:22 by pmoretto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,20 @@
 //#include<stdio.h>
 //#include<string.h>
 
-void *ft_memchr( const void *src, int c, size_t len)
+void	*ft_memchr( const void *src, int c, size_t len)
 {
-    unsigned char *ptr;
-    unsigned int    i;
+	unsigned char	*ptr;
+	unsigned int	i;
 
-    ptr = (unsigned char *)src;
-    i = 0;
-
-    while (i < len)
-    {
-        if (ptr[i] == (unsigned char )c)
-            return ((void *)ptr + i);
-        i++;
-    }
-    return (NULL);
+	ptr = (unsigned char *)src;
+	i = 0;
+	while (i < len)
+	{
+		if (ptr[i] == (unsigned char )c)
+			return ((void *)ptr + i);
+		i++;
+	}
+	return (NULL);
 }
 
 /* int    main()

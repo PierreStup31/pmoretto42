@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 21:24:10 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/11 02:28:15 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/12/16 09:40:24 by pmoretto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-#include <stdbool.h>
 
 /* static _Bool	ft_isspace(const char c)
 {

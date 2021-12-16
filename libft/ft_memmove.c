@@ -3,45 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:30:52 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/23 09:11:40 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/12/16 10:22:49 by pmoretto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/* Cette fonction permet de copier un bloc de mémoire spécifié par le paramètre source dans un nouvel emplacement désigné
- par le paramètre destination. On peut donc dire que cette fonction est proche de la fonction MEMCPY.
-Néanmoins, la différence réside dans le fait que la fonction MEMMOVE accepte que les deux zones de mémoire puissent
- se chevaucher.
-En cas de chevauchement, la copie se passe comme si les octets de la zone source étaient d'abord copiés dans une zone
- temporaire, qui ne chevauche aucune des deux zones pointées par source et destination, et les octets sont 
- ensuite copiés de la zone temporaire vers la zone de destination. */
 
 #include "libft.h"
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
 
-void *ft_memmove(void *dest, const void *src, size_t len)
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	size_t	i;
 
 	if (!dest && !src)
 		return (NULL);
-	
 	i = 0;
 	if (src < dest)
-    {
-		
+	{	
 		while (len > 0)
 		{
-		((unsigned char *)dest)[len - 1] = ((unsigned char *)src)[len - 1];
-		len--;
+			((unsigned char *)dest)[len - 1] = ((unsigned char *)src)[len - 1];
+			len--;
 		}
 	}
-    else 
-    {
+	else
+	{
 		while (i < len)
 		{
 			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
