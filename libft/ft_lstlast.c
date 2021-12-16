@@ -1,32 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 16:02:04 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/12/16 11:10:21 by pmoretto         ###   ########.fr       */
+/*   Created: 2021/12/07 13:21:19 by pierremoret       #+#    #+#             */
+/*   Updated: 2021/12/16 10:01:38 by pmoretto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *foin, const char *aiguille, size_t len)
+t_list	*ft_lstlast(t_list *lst)
 {
-	size_t	magnet;
-
-	magnet = ft_strlen(aiguille);
-	if (aiguille[0] == '\0')
-		return ((char *)&foin[0]);
-	if (foin[0] == '\0')
+	if (!lst)
 		return (NULL);
-	while (len >= magnet)
-	{
-		len--;
-		if (!ft_memcmp(foin, aiguille, magnet))
-			return ((char *)foin);
-		foin++;
-	}
-	return (NULL);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }

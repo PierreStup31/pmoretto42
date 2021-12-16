@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:15:17 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/16 13:53:00 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/12/16 10:19:34 by pmoretto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,19 @@
 //#include <stdlib.h>
 //#include <string.h>
 
-void *ft_memcpy(void *dest, const void *src, size_t len)
+void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
-	char *tmp;
-	const char *s;
-    tmp = dest;
-    s = src;
+	char		*tmp;
+	const char	*s;
 
-    if (dest == NULL && src == NULL)
-        return (NULL);
-         
+	tmp = dest;
+	s = src;
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	while (len--)
-    {
+	{
 		*tmp++ = *s++;
-    }
+	}
 	return (dest);
 }
 

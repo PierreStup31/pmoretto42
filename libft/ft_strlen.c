@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 21:18:25 by pmoretto          #+#    #+#             */
-/*   Updated: 2021/11/10 00:15:00 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/12/16 11:05:40 by pmoretto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Cette fonction permet de calculer la longueur, exprimée en nombre de caractères, de la chaîne de caractères.
 #include "libft.h"
-//#include<stdio.h>
 
 size_t	ft_strlen(const char *c)
 {
@@ -22,7 +20,6 @@ size_t	ft_strlen(const char *c)
 	while (c[dcp] != '\0')
 	{
 		dcp++;
-		
 	}
 	return (dcp);
 }

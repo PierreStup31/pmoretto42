@@ -3,36 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: pmoretto <pmoretto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:33:44 by pierremoret       #+#    #+#             */
-/*   Updated: 2021/11/16 13:55:10 by pierremoret      ###   ########.fr       */
+/*   Updated: 2021/12/16 10:53:41 by pmoretto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Cette fonction recherche la première occurrence du caractère passé en second paramètre dans
-// la chaîne de caractères spécifiée via le premier paramètre.
 #include "libft.h"
 
-//#include <stdio.h>
-//#include <string.h>
-
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-    unsigned int    i;
-    i = 0;
+	unsigned int	i;
 
-    while (s[i])
-    {
-        if (s[i] == (char)c)
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
 			return ((char *)s + i);
 		i++;
-    }
-    if (c == '\0')
-        return ((char*)s + i);
-    return (NULL);
+	}
+	if (c == '\0')
+		return ((char *)s + i);
+	return (NULL);
 }
- 
+
 /* int main ()  
 {
    const char str[] = "This is just a String Salope"; 
