@@ -6,7 +6,7 @@
 #    By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/12 16:10:33 by pierremoret       #+#    #+#              #
-#    Updated: 2022/02/22 16:08:47 by pierremoret      ###   ########.fr        #
+#    Updated: 2022/02/22 16:20:06 by pierremoret      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ NAME	= libftprintf.a
 LIBC	= ar rc
 CC		= gcc
 RM		= rm -f
-#CFLAGS	= -Wall -Wextra -Werror 
+CFLAGS	= -Wall -Wextra -Werror 
 
 all: ${NAME}
 
