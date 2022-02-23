@@ -3,16 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 14:22:41 by pierremoret       #+#    #+#             */
-/*   Updated: 2022/02/21 18:55:20 by pierremoret      ###   ########.fr       */
+/*   Updated: 2022/02/23 18:29:14 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 
 # define FT_PRINTF_H
+
+# define FORMAT '%' '!'
 
 # include <stddef.h>
 # include <stdarg.h>

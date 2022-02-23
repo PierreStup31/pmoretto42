@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pierremoretton <pierremoretton@student.    +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 14:36:43 by pierremoret       #+#    #+#             */
-/*   Updated: 2022/02/22 16:13:16 by pierremoret      ###   ########.fr       */
+/*   Updated: 2022/02/23 18:31:47 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,34 +16,31 @@ void	ft_format(const char *s, t_printf *tab, int i);
 
 int	ft_printf(const char *s, ...)
 {
-	t_printf	*tab;
+	t_printf	tab;
 	int			count;
 	int			i;
 
-	tab = malloc(sizeof(t_printf));
-	if (!tab)
-		return (0);
-	tab->count = 0;
-	va_start(tab->args, s);
+	va_start(tab.args, s);
+	tab.count = 0;
 	count = 0;
-	i = -1;
-	while (s[++i])
+	i = 0;
+	while (s[i] != '\0')
 	{
-		if (s[i] != '%')
+		if (s[i] != FORMAT)
 			count += write(1, &s[i], 1);
 		else
 		{
-			i++;
-			ft_format(s, tab, i);
+			++i;
+			count += ft_format(s, &tab, i);
 		}
+		++i;
 	}
-	count += tab->count;
-	va_end(tab->args);
-	free(tab);
+	count += tab.count;
+	va_end(tab.args);
 	return (count);
 }
 
-void	ft_format(const char *s, t_printf *tab, int i)
+int	ft_format(const char *s, t_printf *tab, int i)
 {
 	if (s[i] == 'c')
 		ft_format_c(tab);
@@ -62,9 +59,9 @@ void	ft_format(const char *s, t_printf *tab, int i)
 	else if (s[i] == 'X')
 		ft_format_x_maj(tab);
 	else if (s[i] == '%')
-	tab->count += write(1, "%", 1);
+		return (write(1, "%", 1));
 	else
-	tab->count += write(1, &s[i], 1);
+		return (write(1, &s[i], 1));
 }
 
 /*int	main()
@@ -81,7 +78,7 @@ void	ft_format(const char *s, t_printf *tab, int i)
 	printf("Valeur de Retour MOI : %d\n", myprint); 
 } */
 
-/* int    main()
+int    main()
 {
     //int res;
     //int bot;
@@ -105,4 +102,4 @@ void	ft_format(const char *s, t_printf *tab, int i)
     printf("resultat perso3 %d\nresultat ordi3 %d\n", res3, bot3);
     printf("resultat pnt %p\nresultat pnt %p\n", &res3, &bot3);
     return (0);
-} */
+}
